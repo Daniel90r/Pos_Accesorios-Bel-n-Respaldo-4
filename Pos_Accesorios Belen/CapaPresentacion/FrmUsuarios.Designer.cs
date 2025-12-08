@@ -43,6 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +94,7 @@
             // 
             this.btnRefrescar.BackColor = System.Drawing.Color.Black;
             this.btnRefrescar.ForeColor = System.Drawing.Color.White;
-            this.btnRefrescar.Location = new System.Drawing.Point(649, 449);
+            this.btnRefrescar.Location = new System.Drawing.Point(606, 449);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(155, 56);
             this.btnRefrescar.TabIndex = 27;
@@ -105,7 +106,7 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Black;
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(473, 449);
+            this.btnEliminar.Location = new System.Drawing.Point(428, 449);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(155, 56);
             this.btnEliminar.TabIndex = 26;
@@ -117,7 +118,7 @@
             // 
             this.btnActualizar.BackColor = System.Drawing.Color.Black;
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Location = new System.Drawing.Point(292, 449);
+            this.btnActualizar.Location = new System.Drawing.Point(253, 449);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(155, 56);
             this.btnActualizar.TabIndex = 25;
@@ -129,7 +130,7 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.Black;
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(115, 449);
+            this.btnGuardar.Location = new System.Drawing.Point(78, 449);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(155, 56);
             this.btnGuardar.TabIndex = 24;
@@ -206,12 +207,26 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "USUARIO:";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(784, 449);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 56);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "SALIR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(951, 546);
+            this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbRol);
             this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.btnEliminar);
@@ -255,5 +270,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }

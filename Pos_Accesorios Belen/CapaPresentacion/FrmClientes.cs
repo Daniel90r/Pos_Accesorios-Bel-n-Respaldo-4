@@ -22,11 +22,22 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
         {
             InitializeComponent();
         }
-
+        void HabilitarBotones()
+        {
+           
+            btnEliminar.Enabled = false;
+            dgvClientes.ClearSelection();
+            dgvClientes.SelectionChanged += (s, e) =>
+            {
+                bool filaSeleccionada = dgvClientes.SelectedRows.Count > 0;      
+                btnEliminar.Enabled = filaSeleccionada;
+            };
+        }
         private void FrmClientes_Load(object sender, EventArgs e)
         {
             CargarDatos();
             Limpiar();
+            HabilitarBotones();
         }
         void CargarDatos()
         {
@@ -113,6 +124,11 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

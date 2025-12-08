@@ -23,6 +23,8 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
 
         private void FrmRegistrarVenta_Load(object sender, EventArgs e)
         {
+            
+            
             // --- CLIENTES ---
             cboCliente.DataSource = ClienteDAL.ListarActivos();
             cboCliente.DisplayMember = "Nombre";
@@ -313,6 +315,22 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnNuevoCliente_Click(object sender, EventArgs e)
+        {
+            FrmClientes frm = new FrmClientes();
+            frm.ShowDialog();
+        }
+
+        private void cboTipoPago_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuscarProducto_TextChanged(object sender, EventArgs e)
+        {
+            dgvProductos.DataSource = dAl.Buscar(txtBuscarProducto.Text);
         }
     }
     

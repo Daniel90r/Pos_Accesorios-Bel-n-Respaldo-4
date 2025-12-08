@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using QuestPDF.Fluent;        // Extensiones para Page(), Table(), Text(), etc.
-using QuestPDF.Helpers;       // Acceso a colores, tamaños y herramientas
-using QuestPDF.Infrastructure;// IDocument, IContainer, DocumentMetadata, etc.
-using System.Data;
-
+using QuestPDF.Fluent;         // Extensiones para Page(), Column(), Row(), Table(), Text(), etc.
+using QuestPDF.Helpers;        // Acceso a colores, tamaños, tipografías, imágenes, etc.
+using QuestPDF.Infrastructure; // IDocument, IContainer, DocumentMetadata, Document, etc.
+using System.Data;             // Para DataTable, DataRow, DataColumn                 // Tipos base
+using System.IO;               // Para escribir archivos
 
 namespace Pos_Accesorios_Belen.Reportes
 {
     // Esta clase representa el PDF como un "documento".
-// Implementa la interfaz IDocument que exige QuestPDF.
-    public class ReporteVentasDocumentos
+    // Implementa la interfaz IDocument que exige QuestPDF.
+    public class ReporteVentasDocumento
     {
         // Modelo donde vienen los datos del reporte
         private readonly ReporteVentasModel Modelo;
 
         // Constructor que recibe el modelo de ventas
-        public ReporteVentasDocumentos(ReporteVentasModel modelo)
+        public ReporteVentasDocumento(ReporteVentasModel modelo)
         {
             Modelo = modelo;
         }
@@ -52,7 +52,7 @@ namespace Pos_Accesorios_Belen.Reportes
                 // -----------------------
                 page.Header().Column(col =>
                 {
-                    col.Item().Text("CAFÉ DULCE AROMA")
+                    col.Item().Text("ACCESORIOS BELÉN")
                         .Bold().FontSize(20);
 
                     col.Item().Text("Reporte de Ventas por Período")
@@ -143,6 +143,6 @@ namespace Pos_Accesorios_Belen.Reportes
             throw new NotImplementedException();
         }
     }
-
 }
+    
 

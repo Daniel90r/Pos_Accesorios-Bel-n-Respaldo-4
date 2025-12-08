@@ -87,7 +87,7 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(867, 40);
+            this.dtpFecha.Location = new System.Drawing.Point(876, 46);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(236, 34);
             this.dtpFecha.TabIndex = 7;
@@ -102,6 +102,7 @@
             this.btnNuevoCliente.TabIndex = 6;
             this.btnNuevoCliente.Text = "NUEVO";
             this.btnNuevoCliente.UseVisualStyleBackColor = false;
+            this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Click);
             // 
             // lblFecha
             // 
@@ -120,6 +121,7 @@
             this.cboTipoPago.Name = "cboTipoPago";
             this.cboTipoPago.Size = new System.Drawing.Size(182, 36);
             this.cboTipoPago.TabIndex = 3;
+            this.cboTipoPago.SelectedIndexChanged += new System.EventHandler(this.cboTipoPago_SelectedIndexChanged);
             // 
             // lblPago
             // 
@@ -170,16 +172,17 @@
             this.txtBuscarProducto.Name = "txtBuscarProducto";
             this.txtBuscarProducto.Size = new System.Drawing.Size(310, 34);
             this.txtBuscarProducto.TabIndex = 10;
+            this.txtBuscarProducto.TextChanged += new System.EventHandler(this.txtBuscarProducto_TextChanged);
             // 
             // btnAgregarProducto
             // 
             this.btnAgregarProducto.BackColor = System.Drawing.Color.Black;
             this.btnAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarProducto.Location = new System.Drawing.Point(40, 345);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(40, 325);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
             this.btnAgregarProducto.Size = new System.Drawing.Size(386, 38);
             this.btnAgregarProducto.TabIndex = 9;
-            this.btnAgregarProducto.Text = "AGRAGAR PRODUCTO AL CARRITO";
+            this.btnAgregarProducto.Text = "AGREGAR PRODUCTO";
             this.btnAgregarProducto.UseVisualStyleBackColor = false;
             this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
             // 
@@ -314,6 +317,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1220, 646);
+            this.ControlBox = false;
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegistrarVenta);
             this.Controls.Add(this.lblTotal);

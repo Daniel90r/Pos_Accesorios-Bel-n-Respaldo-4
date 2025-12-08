@@ -1,5 +1,6 @@
 ﻿using Pos_Accesorios_Belen.CapaNegocio;
 using Pos_Accesorios_Belen.Reportes;
+using Pos_Accesorios_Belen.Reportes.Pos_Accesorios_Belen.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,10 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
+            // ============================
+            // BOTÓN PARA GENERAR EL PDF
+            // ============================
+        
             DateTime inicio = dtpInicio.Value.Date;
             DateTime fin = dtpFin.Value.Date;
 

@@ -62,11 +62,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.label1.Location = new System.Drawing.Point(221, 27);
+            this.label1.Location = new System.Drawing.Point(254, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 45);
+            this.label1.Size = new System.Drawing.Size(319, 45);
             this.label1.TabIndex = 3;
-            this.label1.Text = "INICIAR SECIÓN";
+            this.label1.Text = "ACCESORIOS BELÉN";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSalir
             // 
@@ -112,6 +113,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(717, 405);
+            this.ControlBox = false;
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtClave);
@@ -121,6 +123,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.Text = "LOGIN";
             this.Load += new System.EventHandler(this.FrmLogin_Load);

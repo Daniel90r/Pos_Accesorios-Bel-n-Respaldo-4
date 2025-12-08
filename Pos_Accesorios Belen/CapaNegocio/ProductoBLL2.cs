@@ -56,5 +56,40 @@ namespace Pos_Accesorios_Belen.CapaNegocio
         {
             return dal.Actualizar(p);
         }
+        
+
+        // Insertar o actualizar
+        public int Actualizar(Producto p)
+        {
+            // Validaciones
+            if (string.IsNullOrWhiteSpace(p.Nombre))
+                throw new ArgumentException("El nombre es obligatorio.");
+
+            if (p.Precio <= 0)
+                throw new ArgumentException("El precio debe ser mayor a cero.");
+
+            if (p.Stock < 0)
+                throw new ArgumentException("El stock no puede ser negativo.");
+
+            if (p.Id_Categoria <= 0)
+                throw new ArgumentException("Seleccione una categoría.");
+
+            if (p.Id == 0)
+            {
+                // INSERT
+                return dal.Insertar(p);
+            }
+            else
+            {
+                // UPDATE
+                bool actualizado = dal.Actualizar(p);
+
+                if (!actualizado)
+                    throw new Exception("No se pudo actualizar el producto.");
+
+                return p.Id;
+            }
+        }
+
     }
 }

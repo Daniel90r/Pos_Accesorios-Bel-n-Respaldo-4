@@ -45,8 +45,6 @@
             this.txtStock = new System.Windows.Forms.TextBox();
             this.chkEstado = new System.Windows.Forms.CheckBox();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -254,35 +252,13 @@
             this.cmbCategoria.Size = new System.Drawing.Size(270, 28);
             this.cmbCategoria.TabIndex = 23;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(499, 343);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 32);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "ID:";
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(554, 336);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtId.Multiline = true;
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(131, 39);
-            this.txtId.TabIndex = 25;
-            // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1099, 689);
-            this.Controls.Add(this.txtId);
-            this.Controls.Add(this.label3);
+            this.ControlBox = false;
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.chkEstado);
             this.Controls.Add(this.txtStock);
@@ -328,7 +304,5 @@
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.CheckBox chkEstado;
         private System.Windows.Forms.ComboBox cmbCategoria;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtId;
     }
 }

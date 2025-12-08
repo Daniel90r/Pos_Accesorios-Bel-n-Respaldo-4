@@ -25,7 +25,18 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
         {
             InitializeComponent();
         }
-
+        void HabilitarBotones()
+        {
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
+            dgvProductos.ClearSelection();
+            dgvProductos.SelectionChanged += (s, e) =>
+            {
+                bool filaSeleccionada = dgvProductos.SelectedRows.Count > 0;
+                btnEditar.Enabled = filaSeleccionada;
+                btnEliminar.Enabled = filaSeleccionada;
+            };
+        }
         private void dgvProductos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex < 0) return;
@@ -50,6 +61,7 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
             CargarProductos();
             CargarCategorias();
             LimpiarCampos();
+            HabilitarBotones();
         }
 
         
@@ -126,10 +138,28 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
                 return;
             }
 
-            productoBLL.Eliminar(idSeleccionado);
+            DialogResult resultado = MessageBox.Show(
+                "¿Estás seguro que quieres eliminar este producto?",
+                "Confirmación",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
 
-            CargarProductos();
-            LimpiarCampos();
+            if (resultado == DialogResult.Yes)
+            {
+                bool eliminado = productoBLL.Eliminar(idSeleccionado);
+
+                if (eliminado)
+                {
+                    MessageBox.Show("Producto eliminado correctamente.");
+                    CargarProductos();
+                    LimpiarCampos();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo eliminar el producto.");
+                }
+            }
         }
         
 

@@ -17,6 +17,18 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
         {
             InitializeComponent();
         }
+        void HabilitarBotones()
+        {
+            btnActualizar.Enabled = false;
+            btnEliminar.Enabled = false;
+            dgvUsuarios.ClearSelection();
+            dgvUsuarios.SelectionChanged += (s, e) =>
+            {
+                bool filaSeleccionada = dgvUsuarios.SelectedRows.Count > 0;
+                btnActualizar.Enabled = filaSeleccionada;
+                btnEliminar.Enabled = filaSeleccionada;
+            };
+        }
 
         private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -36,6 +48,7 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
         {
             CargarUsuarios();
             cmbRol.Items.AddRange(new string[] { "Admin", "Empleado"});
+            HabilitarBotones();
         }
         private void CargarUsuarios()
         {
@@ -141,6 +154,11 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
             CargarUsuarios();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
