@@ -113,6 +113,7 @@
             // 
             // comboTodos
             // 
+            this.comboTodos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTodos.FormattingEnabled = true;
             this.comboTodos.Location = new System.Drawing.Point(114, 210);
             this.comboTodos.Name = "comboTodos";
@@ -131,6 +132,7 @@
             // 
             // comboTipo
             // 
+            this.comboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTipo.FormattingEnabled = true;
             this.comboTipo.Location = new System.Drawing.Point(502, 213);
             this.comboTipo.Name = "comboTipo";
@@ -177,7 +179,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblInicio);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmHistorialInventario";
             this.Text = "FrmHistorialInventario";
             this.Load += new System.EventHandler(this.FrmHistorialInventario_Load);

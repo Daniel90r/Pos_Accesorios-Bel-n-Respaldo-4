@@ -57,17 +57,17 @@
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnVentaRapida = new System.Windows.Forms.Button();
             this.panelCentral = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.menuSuperior.SuspendLayout();
             this.panelIzquierdo.SuspendLayout();
             this.panelCentral.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuSuperior
@@ -83,7 +83,7 @@
             this.cambiarClaveToolStripMenuItem});
             this.menuSuperior.Location = new System.Drawing.Point(0, 0);
             this.menuSuperior.Name = "menuSuperior";
-            this.menuSuperior.Size = new System.Drawing.Size(1136, 33);
+            this.menuSuperior.Size = new System.Drawing.Size(1136, 36);
             this.menuSuperior.TabIndex = 1;
             this.menuSuperior.Text = "menuStrip1";
             // 
@@ -97,7 +97,7 @@
             this.gestiónToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gestiónToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.gestiónToolStripMenuItem.Name = "gestiónToolStripMenuItem";
-            this.gestiónToolStripMenuItem.Size = new System.Drawing.Size(93, 30);
+            this.gestiónToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.gestiónToolStripMenuItem.Text = "Gestión";
             // 
             // clientesToolStripMenuItem
@@ -181,7 +181,7 @@
             this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(105, 30);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // reporteDiarioToolStripMenuItem
@@ -199,7 +199,7 @@
             this.ventasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ventasToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(85, 30);
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(85, 29);
             this.ventasToolStripMenuItem.Text = "Ventas";
             // 
             // registrarVentaToolStripMenuItem
@@ -220,15 +220,16 @@
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salirToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(65, 30);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // cambiarClaveToolStripMenuItem
             // 
             this.cambiarClaveToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cambiarClaveToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.cambiarClaveToolStripMenuItem.Name = "cambiarClaveToolStripMenuItem";
-            this.cambiarClaveToolStripMenuItem.Size = new System.Drawing.Size(149, 30);
+            this.cambiarClaveToolStripMenuItem.Size = new System.Drawing.Size(149, 29);
             this.cambiarClaveToolStripMenuItem.Text = "Cambiar Clave";
             this.cambiarClaveToolStripMenuItem.Click += new System.EventHandler(this.cambiarClaveToolStripMenuItem_Click);
             // 
@@ -244,9 +245,9 @@
             this.panelIzquierdo.Controls.Add(this.btnProductos);
             this.panelIzquierdo.Controls.Add(this.btnVentaRapida);
             this.panelIzquierdo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelIzquierdo.Location = new System.Drawing.Point(0, 33);
+            this.panelIzquierdo.Location = new System.Drawing.Point(0, 36);
             this.panelIzquierdo.Name = "panelIzquierdo";
-            this.panelIzquierdo.Size = new System.Drawing.Size(257, 602);
+            this.panelIzquierdo.Size = new System.Drawing.Size(257, 599);
             this.panelIzquierdo.TabIndex = 2;
             // 
             // btnReporte
@@ -260,7 +261,7 @@
             this.btnReporte.Name = "btnReporte";
             this.btnReporte.Size = new System.Drawing.Size(239, 55);
             this.btnReporte.TabIndex = 9;
-            this.btnReporte.Text = "Generar Reporte";
+            this.btnReporte.Text = "GENERAR REPORTE";
             this.btnReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnReporte.UseVisualStyleBackColor = false;
@@ -277,7 +278,7 @@
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(239, 55);
             this.btnUsuarios.TabIndex = 8;
-            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.Text = "USUARIOS";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnUsuarios.UseVisualStyleBackColor = false;
@@ -294,7 +295,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(239, 55);
             this.btnSalir.TabIndex = 7;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "SALIR";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -311,7 +312,7 @@
             this.btnCategoria.Name = "btnCategoria";
             this.btnCategoria.Size = new System.Drawing.Size(239, 55);
             this.btnCategoria.TabIndex = 6;
-            this.btnCategoria.Text = "Categorias";
+            this.btnCategoria.Text = "CATEGORIAS";
             this.btnCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCategoria.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCategoria.UseVisualStyleBackColor = false;
@@ -328,7 +329,7 @@
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(239, 55);
             this.btnInventario.TabIndex = 5;
-            this.btnInventario.Text = "Inventario";
+            this.btnInventario.Text = "INVENTARIO";
             this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnInventario.UseVisualStyleBackColor = false;
@@ -345,7 +346,7 @@
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(239, 55);
             this.btnClientes.TabIndex = 4;
-            this.btnClientes.Text = "Clientes";
+            this.btnClientes.Text = "CLIENTES";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnClientes.UseVisualStyleBackColor = false;
@@ -362,7 +363,7 @@
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(239, 55);
             this.btnProductos.TabIndex = 3;
-            this.btnProductos.Text = "Productos";
+            this.btnProductos.Text = "PRODUCTOS";
             this.btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnProductos.UseVisualStyleBackColor = false;
@@ -379,7 +380,7 @@
             this.btnVentaRapida.Name = "btnVentaRapida";
             this.btnVentaRapida.Size = new System.Drawing.Size(239, 55);
             this.btnVentaRapida.TabIndex = 2;
-            this.btnVentaRapida.Text = "Venta Rápida";
+            this.btnVentaRapida.Text = "REGISTRAR VENTA";
             this.btnVentaRapida.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVentaRapida.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnVentaRapida.UseVisualStyleBackColor = false;
@@ -390,40 +391,10 @@
             this.panelCentral.Controls.Add(this.panel2);
             this.panelCentral.Controls.Add(this.panel1);
             this.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCentral.Location = new System.Drawing.Point(257, 33);
+            this.panelCentral.Location = new System.Drawing.Point(257, 36);
             this.panelCentral.Name = "panelCentral";
-            this.panelCentral.Size = new System.Drawing.Size(879, 602);
+            this.panelCentral.Size = new System.Drawing.Size(879, 599);
             this.panelCentral.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(6, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(624, 596);
-            this.panel1.TabIndex = 0;
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lblUsuario.Location = new System.Drawing.Point(513, 5);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(595, 25);
-            this.lblUsuario.TabIndex = 4;
-            this.lblUsuario.Text = "$\"Usuario: {SesionActual.NombreUsuario} - Rol: {SesionActual.Rol}\";";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Pos_Accesorios_Belen.Properties.Resources.Gemini_Generated_Image_idud5didud5didud;
-            this.pictureBox1.Location = new System.Drawing.Point(-6, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(630, 599);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -444,10 +415,41 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(239, 55);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Proveedores";
+            this.button1.Text = "PROVEEDORES";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(6, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(624, 596);
+            this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Pos_Accesorios_Belen.Properties.Resources.Gemini_Generated_Image_idud5didud5didud;
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(630, 599);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblUsuario.Location = new System.Drawing.Point(513, 5);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(595, 25);
+            this.lblUsuario.TabIndex = 4;
+            this.lblUsuario.Text = "$\"Usuario: {SesionActual.NombreUsuario} - Rol: {SesionActual.Rol}\";";
             // 
             // FrmMenuPrincipal
             // 
@@ -468,9 +470,9 @@
             this.menuSuperior.PerformLayout();
             this.panelIzquierdo.ResumeLayout(false);
             this.panelCentral.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

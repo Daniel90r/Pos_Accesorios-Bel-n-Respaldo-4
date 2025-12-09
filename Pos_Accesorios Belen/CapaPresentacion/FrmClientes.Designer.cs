@@ -65,7 +65,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(24, 47);
+            this.label2.Location = new System.Drawing.Point(124, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(255, 32);
             this.label2.TabIndex = 3;
@@ -74,7 +74,7 @@
             // txtBuscar
             // 
             this.txtBuscar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtBuscar.Location = new System.Drawing.Point(270, 53);
+            this.txtBuscar.Location = new System.Drawing.Point(385, 55);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(278, 26);
             this.txtBuscar.TabIndex = 4;
@@ -85,7 +85,7 @@
             this.dgvClientes.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dgvClientes.Location = new System.Drawing.Point(81, 95);
+            this.dgvClientes.Location = new System.Drawing.Point(130, 96);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
             this.dgvClientes.RowHeadersWidth = 62;
@@ -162,7 +162,7 @@
             // txtTelefono
             // 
             this.txtTelefono.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtTelefono.Location = new System.Drawing.Point(572, 346);
+            this.txtTelefono.Location = new System.Drawing.Point(572, 353);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(278, 26);
             this.txtTelefono.TabIndex = 26;
@@ -170,7 +170,7 @@
             // txtCorreo
             // 
             this.txtCorreo.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtCorreo.Location = new System.Drawing.Point(130, 432);
+            this.txtCorreo.Location = new System.Drawing.Point(142, 432);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(278, 26);
             this.txtCorreo.TabIndex = 25;
@@ -178,7 +178,7 @@
             // txtDui
             // 
             this.txtDui.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtDui.Location = new System.Drawing.Point(130, 391);
+            this.txtDui.Location = new System.Drawing.Point(142, 390);
             this.txtDui.Name = "txtDui";
             this.txtDui.Size = new System.Drawing.Size(278, 26);
             this.txtDui.TabIndex = 24;
@@ -186,7 +186,7 @@
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtNombre.Location = new System.Drawing.Point(130, 343);
+            this.txtNombre.Location = new System.Drawing.Point(142, 343);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(278, 26);
             this.txtNombre.TabIndex = 23;
@@ -196,7 +196,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(426, 387);
+            this.label7.Location = new System.Drawing.Point(426, 395);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 32);
             this.label7.TabIndex = 22;

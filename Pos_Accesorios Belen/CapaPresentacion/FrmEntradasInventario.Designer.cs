@@ -97,6 +97,7 @@
             // 
             // comboProducto
             // 
+            this.comboProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboProducto.FormattingEnabled = true;
             this.comboProducto.Location = new System.Drawing.Point(195, 90);
             this.comboProducto.Name = "comboProducto";
@@ -174,7 +175,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblBuscar);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmEntradasInventario";
             this.Text = "FrmEntradasInventario";
             this.Load += new System.EventHandler(this.FrmEntradasInventario_Load);

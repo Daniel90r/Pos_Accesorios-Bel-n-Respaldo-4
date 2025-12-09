@@ -138,5 +138,16 @@ namespace Pos_Accesorios_Belen
             FrmInventario frm = new FrmInventario();
             frm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmProveedores frm = new FrmProveedores();
+            frm.ShowDialog();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this .Close();
+        }
     }
 }

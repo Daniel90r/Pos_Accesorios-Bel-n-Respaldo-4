@@ -58,19 +58,25 @@
   <ItemGroup>
     <Compile Include="CapaDatos\CategoriaDAL.cs" />
     <Compile Include="CapaDatos\ClienteDAL.cs" />
+    <Compile Include="CapaDatos\CompraDAL.cs" />
     <Compile Include="CapaDatos\Conexion.cs" />
+    <Compile Include="CapaDatos\DetalleCompraDAL.cs" />
     <Compile Include="CapaDatos\MovimientosInventarioDAL.cs" />
     <Compile Include="CapaDatos\ProductoDAL.cs" />
     <Compile Include="CapaDatos\ProductoDAL2.cs" />
+    <Compile Include="CapaDatos\ProveedorDAL.cs" />
     <Compile Include="CapaDatos\ReporteDAL.cs" />
     <Compile Include="CapaDatos\TipoPagoDAL.cs" />
     <Compile Include="CapaDatos\UsuarioDAL.cs" />
     <Compile Include="CapaDatos\VentaDAL.cs" />
     <Compile Include="CapaEntidades\Categoria.cs" />
     <Compile Include="CapaEntidades\Clientes.cs" />
+    <Compile Include="CapaEntidades\Compra.cs" />
+    <Compile Include="CapaEntidades\DetalleCompra.cs" />
     <Compile Include="CapaEntidades\DetalleVenta.cs" />
     <Compile Include="CapaEntidades\MovimientoInventario.cs" />
     <Compile Include="CapaEntidades\Producto.cs" />
+    <Compile Include="CapaEntidades\Proveedor.cs" />
     <Compile Include="CapaEntidades\RespuestaOperacion.cs" />
     <Compile Include="CapaEntidades\Seguridad.cs" />
     <Compile Include="CapaEntidades\SesionActual.cs" />
@@ -81,9 +87,12 @@
     <Compile Include="CapaEntidades\Venta.cs" />
     <Compile Include="CapaNegocio\CategoriaBLL.cs" />
     <Compile Include="CapaNegocio\ClienteBLL.cs" />
+    <Compile Include="CapaNegocio\CompraBLL.cs" />
+    <Compile Include="CapaNegocio\DetalleCompraBLL.cs" />
     <Compile Include="CapaNegocio\MovimientosInventarioBLL.cs" />
     <Compile Include="CapaNegocio\ProductoBLL.cs" />
     <Compile Include="CapaNegocio\ProductoBLL2.cs" />
+    <Compile Include="CapaNegocio\ProveedorBLL.cs" />
     <Compile Include="CapaNegocio\ReporteBLL.cs" />
     <Compile Include="CapaNegocio\UsuarioBLL.cs" />
     <Compile Include="CapaNegocio\VentaBLL.cs" />
@@ -116,6 +125,12 @@
     </Compile>
     <Compile Include="CapaPresentacion\FrmClientes.Designer.cs">
       <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmCompras.Designer.cs">
+      <DependentUpon>FrmCompras.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaPresentacion\FrmEntradasInventario.cs">
       <SubType>Form</SubType>
@@ -153,6 +168,12 @@
     <Compile Include="CapaPresentacion\FrmProductos.Designer.cs">
       <DependentUpon>FrmProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaPresentacion\FrmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmProveedores.Designer.cs">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaPresentacion\FrmRegistrarVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +191,12 @@
     </Compile>
     <Compile Include="CapaPresentacion\FrmUsuarios.Designer.cs">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmGestionProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmGestionProveedores.Designer.cs">
+      <DependentUpon>FrmGestionProveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -194,6 +221,9 @@
     <EmbeddedResource Include="CapaPresentacion\FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CapaPresentacion\FrmCompras.resx">
+      <DependentUpon>FrmCompras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\FrmEntradasInventario.resx">
       <DependentUpon>FrmEntradasInventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +241,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPresentacion\FrmProveedores.resx">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPresentacion\FrmGestionProveedores.resx">
+      <DependentUpon>FrmGestionProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\FrmRegistrarVenta.resx">
       <DependentUpon>FrmRegistrarVenta.cs</DependentUpon>
