@@ -92,5 +92,31 @@ namespace Pos_Accesorios_Belen.CapaDatos
                 return dt;
             }
         }
+        // (Asumo que ya tienes Insertar/Actualizar/Eliminar/Buscar).
+        // Agregamos este método para poblar combos.
+        public static List<Proveedor> ObtenerProveedores()
+        {
+            var lista = new List<Proveedor>();
+
+            using (SqlConnection conn = new SqlConnection(Conexion.Cadena))
+            {
+                string sql = "SELECT ProveedorID, Nombre FROM Proveedores WHERE Estado = 1 ORDER BY Nombre";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+                using (var dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        lista.Add(new Proveedor
+                        {
+                            ProveedorID = Convert.ToInt32(dr["ProveedorID"]),
+                            Nombre = dr["Nombre"].ToString()
+                        });
+                    }
+                }
+            }
+
+            return lista;
+        }
     }
 }

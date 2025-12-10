@@ -51,5 +51,16 @@ namespace Pos_Accesorios_Belen.CapaNegocio
 
             return CompraDAL.EliminarCompra(id);
         }
+        // si ya tienes ObtenerCompras() sin params puedes mantenerla y llamar a la nueva:
+        
+
+        // versión con filtros
+        public static List<Compra> ObtenerCompras(int proveedorId = 0, int productoId = 0)
+        {
+            return CompraDAL.ObtenerCompras(proveedorId, productoId);
+        }
+
+        // ... resto de métodos (RegistrarCompra, ActualizarCompra, EliminarCompra) ...
     }
 }
+

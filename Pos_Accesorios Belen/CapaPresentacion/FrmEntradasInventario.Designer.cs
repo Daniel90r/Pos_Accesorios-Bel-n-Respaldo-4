@@ -47,8 +47,8 @@
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblBuscar.Location = new System.Drawing.Point(243, 9);
+            this.lblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblBuscar.Location = new System.Drawing.Point(286, 9);
             this.lblBuscar.Name = "lblBuscar";
             this.lblBuscar.Size = new System.Drawing.Size(316, 32);
             this.lblBuscar.TabIndex = 9;
@@ -120,16 +120,19 @@
             // 
             // btnRegistrar
             // 
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRegistrar.Location = new System.Drawing.Point(195, 474);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(281, 44);
             this.btnRegistrar.TabIndex = 18;
             this.btnRegistrar.Text = "Registrar Entrada";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // dgvEntradasRecientes
             // 
+            this.dgvEntradasRecientes.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvEntradasRecientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEntradasRecientes.Location = new System.Drawing.Point(195, 243);
             this.dgvEntradasRecientes.Name = "dgvEntradasRecientes";
@@ -147,12 +150,14 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCerrar.Location = new System.Drawing.Point(619, 475);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(112, 43);
             this.btnCerrar.TabIndex = 22;
             this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmEntradasInventario
@@ -177,7 +182,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmEntradasInventario";
-            this.Text = "FrmEntradasInventario";
+            this.Text = "EntradasInventario";
             this.Load += new System.EventHandler(this.FrmEntradasInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntradasRecientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();

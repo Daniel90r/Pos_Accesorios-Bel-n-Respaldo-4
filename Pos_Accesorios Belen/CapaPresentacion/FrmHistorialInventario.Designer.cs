@@ -46,10 +46,11 @@
             // lblInicio
             // 
             this.lblInicio.AutoSize = true;
-            this.lblInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblInicio.Location = new System.Drawing.Point(306, 33);
+            this.lblInicio.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblInicio.Location = new System.Drawing.Point(287, 33);
             this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(331, 32);
+            this.lblInicio.Size = new System.Drawing.Size(441, 45);
             this.lblInicio.TabIndex = 9;
             this.lblInicio.Text = "HISTORIAL DE INVANTARIO";
             // 
@@ -151,12 +152,14 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCerrar.Location = new System.Drawing.Point(822, 480);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(112, 43);
             this.btnCerrar.TabIndex = 21;
             this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmHistorialInventario
@@ -181,7 +184,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmHistorialInventario";
-            this.Text = "FrmHistorialInventario";
+            this.Text = "HistorialInventario";
             this.Load += new System.EventHandler(this.FrmHistorialInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).EndInit();
             this.ResumeLayout(false);

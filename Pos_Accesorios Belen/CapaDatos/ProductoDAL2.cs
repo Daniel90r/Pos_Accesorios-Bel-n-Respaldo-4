@@ -110,5 +110,48 @@ namespace Pos_Accesorios_Belen.CapaDatos
                 return dt;
             }
         }
+        public static List<Producto> ObtenerProductos()
+        {
+            var lista = new List<Producto>();
+
+            using (SqlConnection conn = new SqlConnection(Conexion.Cadena))
+            {
+                string sql = "SELECT Id, Nombre, Precio FROM Producto WHERE Estado = 1 ORDER BY Nombre";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+                using (var dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        lista.Add(new Producto
+                        {
+                            Id = Convert.ToInt32(dr["Id"]),
+                            Nombre = dr["Nombre"].ToString(),
+                            Precio = dr["Precio"] == DBNull.Value ? 0m : Convert.ToDecimal(dr["Precio"])
+                        });
+                    }
+                }
+            }
+
+            return lista;
+        }
+        public static bool AumentarStock(int productoID, int cantidad)
+        {
+            bool resultado = false;
+
+            using (SqlConnection con = new SqlConnection(Conexion.Cadena))
+            {
+                string query = "UPDATE Productos SET Stock = Stock + @Cantidad WHERE ProductoID = @ProductoID";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Cantidad", cantidad);
+                cmd.Parameters.AddWithValue("@ProductoID", productoID);
+
+                con.Open();
+                resultado = cmd.ExecuteNonQuery() > 0;
+            }
+
+            return resultado;
+        }
     }
 }

@@ -77,6 +77,11 @@ namespace Pos_Accesorios_Belen.CapaNegocio
 
             return ProveedorDAL.Buscar(nombre, tipo);
         }
+        // Añade este método para retornar lista de Proveedores al combo
+        public static List<Proveedor> ObtenerProveedores()
+        {
+            return ProveedorDAL.ObtenerProveedores();
+        }
     }
 }
 

@@ -88,7 +88,9 @@
     <Compile Include="CapaNegocio\CategoriaBLL.cs" />
     <Compile Include="CapaNegocio\ClienteBLL.cs" />
     <Compile Include="CapaNegocio\CompraBLL.cs" />
+    <Compile Include="CapaNegocio\CompraBLL2.cs" />
     <Compile Include="CapaNegocio\DetalleCompraBLL.cs" />
+    <Compile Include="CapaNegocio\DetalleCompraBLL2.cs" />
     <Compile Include="CapaNegocio\MovimientosInventarioBLL.cs" />
     <Compile Include="CapaNegocio\ProductoBLL.cs" />
     <Compile Include="CapaNegocio\ProductoBLL2.cs" />
@@ -137,6 +139,12 @@
     </Compile>
     <Compile Include="CapaPresentacion\FrmEntradasInventario.Designer.cs">
       <DependentUpon>FrmEntradasInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmGestionCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmGestionCompra.Designer.cs">
+      <DependentUpon>FrmGestionCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaPresentacion\FrmHistorialInventario.cs">
       <SubType>Form</SubType>
@@ -226,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\FrmEntradasInventario.resx">
       <DependentUpon>FrmEntradasInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPresentacion\FrmGestionCompra.resx">
+      <DependentUpon>FrmGestionCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\FrmHistorialInventario.resx">
       <DependentUpon>FrmHistorialInventario.cs</DependentUpon>

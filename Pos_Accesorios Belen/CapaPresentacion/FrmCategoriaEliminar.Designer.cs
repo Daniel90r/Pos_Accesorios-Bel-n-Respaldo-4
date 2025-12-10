@@ -55,9 +55,9 @@
             this.label3.Location = new System.Drawing.Point(38, 154);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 32);
+            this.label3.Size = new System.Drawing.Size(193, 32);
             this.label3.TabIndex = 5;
-            this.label3.Text = "DESCRIPCÓN:";
+            this.label3.Text = "DESCRIPCICÓN:";
             // 
             // label2
             // 
@@ -72,14 +72,14 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(223, 151);
+            this.txtDescripcion.Location = new System.Drawing.Point(239, 151);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(276, 39);
             this.txtDescripcion.TabIndex = 7;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(223, 74);
+            this.txtNombre.Location = new System.Drawing.Point(239, 77);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(276, 39);
             this.txtNombre.TabIndex = 6;

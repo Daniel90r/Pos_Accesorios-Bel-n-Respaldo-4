@@ -53,7 +53,7 @@
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.lblBuscar.Location = new System.Drawing.Point(338, 9);
             this.lblBuscar.Name = "lblBuscar";
             this.lblBuscar.Size = new System.Drawing.Size(337, 32);
@@ -191,6 +191,7 @@
             // 
             // dgvLista
             // 
+            this.dgvLista.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLista.Location = new System.Drawing.Point(122, 234);
             this.dgvLista.Name = "dgvLista";
@@ -245,6 +246,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1023, 597);
+            this.ControlBox = false;
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cboTipoProd);
             this.Controls.Add(this.txtEmail);

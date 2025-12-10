@@ -53,10 +53,11 @@
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblBuscar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.lblBuscar.Location = new System.Drawing.Point(386, 9);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(190, 32);
+            this.lblBuscar.Size = new System.Drawing.Size(253, 45);
             this.lblBuscar.TabIndex = 13;
             this.lblBuscar.Text = "PROVEEDORES ";
             // 
@@ -89,6 +90,7 @@
             // 
             // dgvProveedores
             // 
+            this.dgvProveedores.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProveedores.Location = new System.Drawing.Point(157, 179);
             this.dgvProveedores.Name = "dgvProveedores";
@@ -142,6 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(999, 553);
+            this.ControlBox = false;
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNuevo);

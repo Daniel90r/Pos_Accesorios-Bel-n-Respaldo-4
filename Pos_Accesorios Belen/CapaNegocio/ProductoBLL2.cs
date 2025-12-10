@@ -90,6 +90,14 @@ namespace Pos_Accesorios_Belen.CapaNegocio
                 return p.Id;
             }
         }
+        public static List<Producto> ObtenerProductos()
+        {
+            return ProductoDAL2.ObtenerProductos();
+        }
+        public static bool AumentarStock(int productoID, int cantidad)
+        {
+            return ProductoDAL2.AumentarStock(productoID, cantidad);
+        }
 
     }
 }

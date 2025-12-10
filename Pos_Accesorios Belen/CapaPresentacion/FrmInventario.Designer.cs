@@ -45,10 +45,11 @@
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblCliente.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.lblCliente.Location = new System.Drawing.Point(301, 9);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(314, 32);
+            this.lblCliente.Size = new System.Drawing.Size(364, 38);
             this.lblCliente.TabIndex = 1;
             this.lblCliente.Text = "CONTROL DE PRODUCTOS";
             // 
@@ -94,32 +95,38 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnAgregar.Location = new System.Drawing.Point(18, 400);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(268, 44);
+            this.btnAgregar.Size = new System.Drawing.Size(271, 44);
             this.btnAgregar.TabIndex = 14;
             this.btnAgregar.Text = "Agregar Productos";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnRegistrarEntrada
             // 
+            this.btnRegistrarEntrada.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRegistrarEntrada.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRegistrarEntrada.Location = new System.Drawing.Point(307, 400);
             this.btnRegistrarEntrada.Name = "btnRegistrarEntrada";
             this.btnRegistrarEntrada.Size = new System.Drawing.Size(244, 44);
             this.btnRegistrarEntrada.TabIndex = 15;
             this.btnRegistrarEntrada.Text = "Registrar Entrada";
-            this.btnRegistrarEntrada.UseVisualStyleBackColor = true;
+            this.btnRegistrarEntrada.UseVisualStyleBackColor = false;
             this.btnRegistrarEntrada.Click += new System.EventHandler(this.btnRegistrarEntrada_Click);
             // 
             // btnHistorial
             // 
+            this.btnHistorial.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnHistorial.ForeColor = System.Drawing.SystemColors.Control;
             this.btnHistorial.Location = new System.Drawing.Point(577, 400);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.Size = new System.Drawing.Size(174, 44);
             this.btnHistorial.TabIndex = 16;
             this.btnHistorial.Text = "Ver Historial";
-            this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnHistorial.UseVisualStyleBackColor = false;
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
             // comboCategoria
@@ -144,12 +151,14 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCerrar.Location = new System.Drawing.Point(786, 401);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(112, 43);
             this.btnCerrar.TabIndex = 19;
             this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmInventario
@@ -171,9 +180,10 @@
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.lblCliente);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.Control;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmInventario";
-            this.Text = "FrmInventario";
+            this.Text = "Inventario";
             this.Load += new System.EventHandler(this.FrmInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);

@@ -149,5 +149,16 @@ namespace Pos_Accesorios_Belen
         {
             this .Close();
         }
+
+        private void btnCompras_Click(object sender, EventArgs e)
+        {
+            FrmCompras frm = new FrmCompras();
+            frm.ShowDialog();
+        }
+
+        private void historialDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
