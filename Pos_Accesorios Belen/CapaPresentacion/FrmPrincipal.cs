@@ -82,11 +82,15 @@ namespace Pos_Accesorios_Belen
                     btnClientes.Enabled = false;
                     btnUsuarios.Enabled = false;
                     btnInventario.Enabled = false;
+                    btnProveedores.Enabled = false;
+                    btnCompras.Enabled = false;
                     break;
                 default:
                     btnClientes.Enabled = false;
                     btnUsuarios.Enabled = false;
                     btnInventario.Enabled = false;
+                    btnProveedores.Enabled = false;
+                    btnCompras.Enabled = false;
                     break;
 
             }

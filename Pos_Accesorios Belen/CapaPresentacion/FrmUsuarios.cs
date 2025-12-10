@@ -153,6 +153,7 @@ namespace Pos_Accesorios_Belen.CapaPresentacion
 
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
+            Limpiar();
             CargarUsuarios();
         }
 

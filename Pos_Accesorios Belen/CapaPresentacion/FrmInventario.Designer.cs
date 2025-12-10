@@ -85,6 +85,7 @@
             // 
             this.dgvProductos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductos.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvProductos.Location = new System.Drawing.Point(132, 153);
             this.dgvProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvProductos.Name = "dgvProductos";
@@ -180,7 +181,7 @@
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.lblCliente);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.SystemColors.Control;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmInventario";
             this.Text = "Inventario";
